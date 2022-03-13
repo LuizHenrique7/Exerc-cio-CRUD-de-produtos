@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Produtos{% endblock %}
+
+{% block content %}
+    <a class="botao_adicionar" href="/adicionar">Adicionar</a>
+
+
+    {% for produto in produto %}
+        <section>
+            <a href="/produto/{{ produto.id }}">{{ produto.nome }}</a>
+            <a href="/editar/{{ produto.id }}">Editar</a>
+            <a href="/deletar/{{ produto.id }}">Deletar</a>
+
+        </section>
+
+    {% endfor %}
+
+
+{% endblock %}

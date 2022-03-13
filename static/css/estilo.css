@@ -1,0 +1,16 @@
+h1{
+    color: red;
+}
+
+a {
+    color: green;
+}
+
+.botao_adicionar{
+    color: blue;
+}
+
+.botao_adicionar{
+    width: 500px;
+    height: 50px;
+}
